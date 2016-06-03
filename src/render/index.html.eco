@@ -1,0 +1,15 @@
+---
+layout: 'default'
+title: 'Bob Paulin'
+---
+
+<div>
+	<img src="/images/company-logo.gif"/>
+	<% for document in @getCollection('posts').toJSON(): %>
+		<div>
+		<a href="<%= document.url %>"><h2><%= document.title %></h2></a>
+		<span><%= document.date.toDateString() %></span>
+		<p><%= document.content.substring(0, 600) %>...<a href="<%= document.url %>">Read More</a></p>
+		</div>
+	<% end %>
+</div>
