@@ -24,7 +24,7 @@
     "url": "https://github.com/docpad/twitter-bootstrap.docpad.git"
   },
   "engines": {
-    "node": "0.10",
+    "node": "0.12",
     "npm": "1.2"
   },
   "dependencies": {
@@ -38,12 +38,12 @@
     "docpad-plugin-partials": "~2.9.2",
     "docpad-plugin-related": "~2.2.2",
     "docpad-plugin-stylus": "~2.9.0",
-    "docpad-plugin-sunny": "^2.1.0",
+    "docpad-plugin-sunny": "~2.1.0",
     "docpad-plugin-text": "~2.3.3"
   },
   "devDependencies": {
-    "docpad-plugin-ghpages": "^2.4.4",
-    "docpad-plugin-livereload": "~2.6.1"
+    "docpad-plugin-ghpages": "~2.4.4",
+    "docpad-plugin-livereload": "~2.7.1"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
