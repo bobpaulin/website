@@ -42,10 +42,12 @@
     "docpad-plugin-text": "~2.3.3"
   },
   "devDependencies": {
+    "docpad-plugin-ghpages": "^2.4.4",
     "docpad-plugin-livereload": "~2.6.1"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
-    "start": "node_modules/docpad/bin/docpad-server"
+    "start": "node_modules/docpad/bin/docpad-server",
+    "deploy": "node_modules/.bin/docpad deploy-ghpages --silent --env static"
   }
 }
