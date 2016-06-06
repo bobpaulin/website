@@ -105,22 +105,6 @@ docpadConfig = {
 					tarExtractClean: true
 				}
 			]
-		sunny:
-			configFromEnv: true,
-			envPrefixes: ["DOCPAD_SUNNY_", "DOCPAD_", "BOB_WEBSITE_"],
-			cloudConfigs: [
-				{
-					sunny: {
-						provider: 'aws'
-						account: 'AKIAJQFH4FP2W46ONCJA'
-						authUrl: 'us-east-1.amazonaws.com'
-						secretKey: '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'
-						ssl: true
-					}
-					container: 'bobpaulin-website'
-					acl: false #Uses the policy already set on S3.
-					retryLimit: -1 # Retry as long as is necessary until the upload works.
-				}]
 
 
 	# =================================
